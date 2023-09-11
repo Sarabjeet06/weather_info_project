@@ -1,0 +1,104 @@
+body{
+    background: linear-gradient(to left,#94a8f0,#65b7b2);
+    font-size: 1.2rem;
+}
+
+/*------- haeding------ */
+
+.container>h1{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#1d78a8,#06573d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------- main section------- */
+
+.weather-card{
+    width:90%;
+    min-width: 250px;
+    background: linear-gradient(to right,#0aa6e9,#57a8ba,#58b9b9);
+    box-shadow: 0 1px 5px #000000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/*---------- search Bar------ */
+
+.searchBar form{
+    display: flex;
+    justify-content: center;
+}
+
+.searchBar img{
+    width: 20px;
+}
+
+.searchBar button{
+    height: 31px;
+    margin-left: 3px;
+}
+
+.searchBar input{
+    height: 25px;
+    width: 30%;
+    margin-right: 3px;
+}
+
+
+/*------ content ----- */
+
+
+.city{
+    padding-top: 30px;
+    font-size: 2rem;
+}
+
+.temperature{
+    font-size: 3rem;
+}
+
+.inner-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner-content-col{
+    padding: 30px 100px 40px 100px;
+}
+
+.weatherImage img{
+    width: 4rem;
+}
+
+.container-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weatherReports{
+    padding-top: 10px;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.container-row img{
+    width: 40px;
+}

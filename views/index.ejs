@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Info</h1>
+        <div class="weather-card">
+            <div class="searchBar">
+                <form action="/cityWeather" method="POST">
+                    <input type="text" placeholder="Enter a city" name="city">
+                    <button type="submit"><img src="/images/search_img.png" alt="search-symbol"></button>
+                </form>
+            </div>
+            <div class="content">
+                <div class="city">
+                    <%= cityName %>
+                </div>
+                <div class="inner-content">
+                    <div class="temperatureDesc inner-content-col">
+                        <div class="temperature">
+                            <%= temp %>°C
+                        </div>
+                        <div class="description"><%= desc %></div>
+                    </div>
+                    <div class="weatherImage inner-content-col">
+                        <img src="/images/weather_pic.png" alt="wheater image">
+                    </div>
+                </div>
+            </div>
+            <div class="container-row">
+                <div class="windSpeed container-col">
+                    <img src="/images/wind_pic.png" alt="wind image">
+                    <div class="weatherReports">
+                        wind speed: <%= windSpeed %> m/sec
+                    </div>
+                </div>
+                <div class="humidity container-col">
+                    <img src="/images/humidity_pic.png" alt="humidity image">
+                    <div class="weatherReports">
+                        humidity: <%= humidity %> %
+                    </div>
+                </div>
+                <div class="pressure container-col">
+                    <img src="/images/pressure_img.png" alt="air pressure image">
+                    <div class="weatherReports">
+                        pressure: <%= pressure %> mbar
+                    </div>
+                </div>
+                <div class="visibility container-col">
+                    <img src="/images/visibility_img.png" alt="visibility image">
+                    <div class="weatherReports">
+                        visibility: <%= visibility %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
